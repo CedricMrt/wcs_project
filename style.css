@@ -159,9 +159,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 67vh;
+    height: 100vh;
     margin-bottom: 0;
-
 }
 
 table {
