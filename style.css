@@ -1,0 +1,262 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header {
+    background-color: #98CBF8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+#heros h1 {
+    color: black;
+    font-size: 3em;
+    text-shadow: 0 3px 5px white;
+    padding-bottom: 10em;
+}
+
+#logo {
+    padding-left: 2em;
+}
+
+#logo img {
+    background-color: #0E3E81;
+    border-radius: 50%;
+    width: 10em;
+    padding: 2em;
+    margin: 0.5em;
+}
+
+nav {
+    display: inline;
+    width: 40%;
+    min-width: 440px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+    padding-right: 0;
+    font-size: 1.1em;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    
+}
+
+a:hover {
+    box-shadow: 0 0 5px #0E3E81,
+                0 0 25px #0E3E81,
+                0 0 50px #0E3E81,
+                0 0 200px #0E3E81;
+    border-radius: 5px;
+}
+
+#heros {
+    background-image: url("https://images.pexels.com/photos/161815/santorini-oia-greece-water-161815.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about {
+    background-color: #98CBF8;
+    padding-bottom: 1em;
+}
+
+h2 {
+    margin: 0;
+    padding: 2em 0em 1em 1em ;
+}
+
+p {
+    padding: 0em 1em;
+    text-align: left;
+}
+
+@media only screen and (max-width : 720px) {
+    ul {
+        display: block;
+    }
+    
+    li {
+        padding-bottom: 1em;
+    }
+
+    nav {
+        min-width: 120px;
+        width: 10%;
+    }
+    
+}
+
+
+                                    /* family.html */
+
+#family {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 2em 0em;
+    background-color: #98CBF8;
+    flex-wrap: wrap;
+}
+
+.perso h1 {
+    text-align: center;
+
+}
+
+.perso img {
+    height: 600px;
+    width: 380px;
+    border-radius: 5%;
+    transition: 0.4s;
+    
+}
+
+.perso img:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+
+}
+
+                                    /* Assets html */
+
+.title h1 {
+    background-color: #98CBF8;
+    margin: 0;
+    text-align: center;
+    font-size: 3em;
+}
+
+#container {
+    background-color: #98CBF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+}
+
+table {
+    border: 2px solid #0E3E81;
+}
+
+thead {
+    background-color: blue;
+    color: aquamarine;
+    letter-spacing: 0.4em;
+    font-weight: bold;
+    
+}
+
+tbody, td {
+    border: 2px solid #0E3E81;
+    padding: 1em 8em;
+}
+
+@media only screen and (max-width : 1050px) {
+
+    tbody, td {
+        padding: 1em 6em;
+    } 
+}
+@media only screen and (max-width : 1050px) {
+
+    tbody, td {
+        padding: 1em 4em;
+    } 
+}
+@media only screen and (max-width : 660px) {
+
+    tbody, td {
+        padding: 0.5em 2em;
+    } 
+}
+@media only screen and (max-width : 415px) {
+
+    tbody, td {
+        padding: 0em 1em;
+    }
+    
+}
+
+
+                                /* Contact html */
+
+form label {
+    display: block;
+    
+} 
+form {
+    width: 50%;
+    
+} 
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em ;
+    font-size: 1.5em;
+}
+
+input, textarea {
+    border-style: none;
+    font-size: 1em;
+    padding: 0.3em;
+    box-shadow: 0px 0px 4px black;
+}
+
+input::placeholder, textarea::placeholder {
+    padding-left: 0.5em;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color: transparent;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+#submit {
+    font-size: 1em;
+    box-shadow: 0px 0px 4px black;
+    cursor: pointer;  
+}
+
+#submit:hover {
+    box-shadow: 0 0 5px #0E3E81,
+                0 0 25px #0E3E81,
+                0 0 50px #0E3E81,
+                0 0 200px #0E3E81;
+    border-radius: 5px;
+} 
+
+
